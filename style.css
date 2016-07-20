@@ -1,0 +1,71 @@
+/* CounterRio color palette: https://coolors.co/4f000b-720026-f47588-ff7f51-ff9b54 */
+
+/* CounterBirth color palette: https://coolors.co/330c2f-7b287d-7067cf-b7c0ee-cbf3d2 */
+
+body{
+	background-color: #CBF3D2;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+#counterRio h1{
+	color: #4F000B;
+	margin:40px 0px 0px 20px;
+	text-align: center;
+	font-size: 35px;
+}
+
+#counterBirth h1{
+	color: #330C2F;
+	margin:40px 0px 0px 20px;
+	text-align: center;
+	font-size: 35px;
+}
+
+#counterRio #countdown-timer {
+	color: #CE4257;
+	/* we don't need margin auto because the div is already 100% wide. 
+	We need to center the stuff in the div, not the div itself. Answer = text-align */
+	text-align: center;
+}
+
+#counterBirth #countdown-timer {
+	color: #7B287D;
+	/* we don't need margin auto because the div is already 100% wide. 
+	We need to center the stuff in the div, not the div itself. Answer = text-align */
+	text-align: center;
+}
+
+/* only grab the divs one layer deep in the countdown timer */
+#countdown-timer > div{
+	padding: 10px;
+	border-radius: 3px;
+	/* make sure these divs behave like blocks, but are on the same line. */
+	display:inline-block;
+}
+
+#counterRio #countdown-timer > div{
+	background-color: #720026;
+}
+
+#counterBirth #countdown-timer > div{
+	background-color: #6860C1;
+}
+
+#countdown-timer div > span{
+	padding: 15px;
+	border-radius:3px;
+	display: inline-block;
+	font-size: 28px;
+}
+#counterRio #countdown-timer div > span{
+	background-color: #FF7F51;
+}
+
+#counterBirth #countdown-timer div > span{
+	background-color: #B7C0EE;
+	}
+
+.small-text{
+	font-size: 25px;
+
+}
